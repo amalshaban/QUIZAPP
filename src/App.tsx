@@ -39,15 +39,15 @@ function App() {
           element: <Register />,
         },
         {
-          path: "ForgetPassword",
+          path: "Forget-Password",
           element: <ForgetPassword />,
         },
         {
-          path: "ResetPassword",
+          path: "Reset-Password",
           element: <ResetPassword />,
         },
         {
-          path: "changePassword",
+          path: "change-Password",
           element: <ChangePassword />,
         },
       ],

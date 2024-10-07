@@ -75,7 +75,7 @@ export default function Login() {
               <input
                 type="email"
                 placeholder="Type your email"
-                className="  w-full bg-authbackground border-none"
+                className="  w-full bg-authbackground border-none outline-none"
                 {...register("email", {
                   required: "email is require",
                   pattern: {
@@ -96,7 +96,7 @@ export default function Login() {
               <input
                 type="password"
                 placeholder="password"
-                className="  w-full bg-authbackground border-none"
+                className="  w-full bg-authbackground border-none outline-none"
                 {...register("password", { required: "password is required" })}
               />
             </div>

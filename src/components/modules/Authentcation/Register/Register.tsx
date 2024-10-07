@@ -73,7 +73,7 @@ export default function Register() {
                   <input
                     type="text"
                     placeholder="Type Your first name"
-                    className="  w-full bg-authbackground border-none"
+                    className="  w-full bg-authbackground border-none outline-none"
                     {...register("first_name", {
                       required: "firstname is require",
                     })}
@@ -98,7 +98,7 @@ export default function Register() {
                   <input
                     type="text"
                     placeholder="Type Your last name"
-                    className="  w-full bg-authbackground border-none"
+                    className="  w-full bg-authbackground border-none outline-none"
                     {...register("last_name", {
                       required: "lastname is require",
                     })}
@@ -122,7 +122,7 @@ export default function Register() {
                 <input
                   type="email"
                   placeholder="Type Your email"
-                  className="w-full bg-authbackground"
+                  className="w-full bg-authbackground outline-none"
                   {...register("email", {
                     required: "email is require",
                     pattern: {
@@ -162,7 +162,7 @@ export default function Register() {
                 <input
                   type="password"
                   placeholder="Type Your password"
-                  className="w-full bg-authbackground"
+                  className="w-full bg-authbackground outline-none"
                   {...register("password", {
                     required: "password is require",
                     pattern: {

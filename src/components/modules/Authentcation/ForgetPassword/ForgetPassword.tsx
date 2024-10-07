@@ -55,7 +55,7 @@ export default function ForgetPassword() {
             <input
               type="email"
               placeholder="Type your email"
-              className="w-full bg-authbackground"
+              className="w-full bg-authbackground outline-none"
               {...register("email", {
                 required: "email is require",
                 pattern: {
@@ -73,7 +73,7 @@ export default function ForgetPassword() {
         </div>
         <div>
           <button
-            className="py-3 px-10 rounded-2xl bg-white text-black font-semibold"
+            className="hover:bg-lime-500 transition-all py-3 px-10 rounded-2xl bg-white text-black font-semibold"
             type="submit"
           >
             Send Email

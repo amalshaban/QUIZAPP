@@ -17,10 +17,9 @@ interface topStudents {
   last_name: string;
   status: string;
   __v: number;
-  group: {
-  name: string;
-  status: string;
-  };
+  group: [
+    name: string,
+    status: string];
 };
 
 export default function Dashboard() {
@@ -151,7 +150,7 @@ export default function Dashboard() {
                     </a>
                   </h3>
                   <p className="line-clamp-2 text-sm text-gray-700">
-                    {studentsList.group.name}
+                  {studentsList?.group?.name}
                   </p>
                   <div className="mt-2 flex justify-between w-full ">
                     <div className="">

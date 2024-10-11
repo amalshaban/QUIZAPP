@@ -1,7 +1,7 @@
 const BASEURL = `https://upskilling-egypt.com:3005/api`;
 
 // <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<AUTHURL>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-const AUTHURL = {
+export const AUTHURL = {
   REGISTER: `${BASEURL}/auth/register`,
   LOGIN: `${BASEURL}/auth/login`,
   FORGET: `${BASEURL}/auth/forgot-password`,

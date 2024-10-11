@@ -4,7 +4,6 @@ import Authlayout from "./components/shared/Authlayout/Authlayout";
 import Notfound from "./components/shared/NotFound/Notfound";
 import Login from "./components/modules/Authentcation/Login/Login";
 import Register from "./components/modules/Authentcation/Register/Register";
-import ForgetPassword from "./components/modules/Authentcation/ForgetPassword/ForgetPassword";
 import ResetPassword from "./components/modules/Authentcation/ResetPassword/ResetPassword";
 import ChangePassword from "./components/modules/Authentcation/Changepassword/ChangePassword";
 import Dashboard from "./components/modules/InstructorsModule/Dashboard/Dashboard";
@@ -18,6 +17,9 @@ import MasterInstructors from "./components/shared/MasterInstructor/MasterInstru
 import Quizz from "./components/modules/StudentsModule/Quizz/Quizz";
 import ResultsStudents from "./components/modules/StudentsModule/Results/ResultsStudents";
 import DashboardStudent from "./components/modules/StudentsModule/Dashboard/DashboardStudents";
+import { ToastContainer } from "react-toastify";
+import ForgetPassword from "./components/modules/Authentcation/ForgetPassword/ForgetPassword";
+
 // creat routing path cildren
 function App() {
   const routes = createBrowserRouter([
@@ -39,7 +41,7 @@ function App() {
           element: <Register />,
         },
         {
-          path: "ForgetPassword",
+          path: "forgetpassword",
           element: <ForgetPassword />,
         },
         {
@@ -119,6 +121,7 @@ function App() {
   ]);
   return (
     <>
+  <ToastContainer/>
       <RouterProvider router={routes} />
     </>
   );

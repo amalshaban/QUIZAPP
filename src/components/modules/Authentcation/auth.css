@@ -1,0 +1,40 @@
+.bg-auth{
+    background-color: #0D1321;
+    color: white;
+}
+.auth-title{
+    color: #C5D86D;
+    font-size: 25px;
+    font-weight: 700px;
+    padding: 1rem 0;
+}
+.sign-container{
+    padding: 10px 5px;
+    border-radius: 5px;
+    text-align: center;
+    width: 5rem;
+    display: inline-block;
+    background-color: #333333;
+}
+.active-sign-container{
+    border: 5px solid #C5D86D;
+    
+}
+.click-link{
+    color: #C5D86D;
+    margin-left: 3px;
+}
+.validation-name{
+    margin-top: 3rem;
+    line-height: 15px;
+    font-size: 13px;
+    width: 500px;
+    color: #C5D86D;
+}
+.validation-message{
+    width: 500px;
+    line-height: 15px;
+    font-size: 13px;
+    margin-top: -1rem;
+    color: #C5D86D;
+}

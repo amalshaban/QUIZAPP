@@ -40,10 +40,8 @@ export default function Login() {
       navigate("/instructor");
       console.log(response);
     } catch (error) {
-      toast.error(
-        error.response.data.message || "Login unsuccessful. Please try again"
-      );
       console.log(error);
+      toast.error("delete failed");
     }
   };
 
@@ -60,7 +58,7 @@ export default function Login() {
           />
         </aside>
 
-        <main className="flex items-center rounded-xl lg:order-first justify-center sm:px-12
+        <main className="flex items-center rounded-xl lg:order-first justify-right sm:px-12
          lg:col-span-7 lg:px-16 lg:py-12 xl:col-span-6">
           <div className="max-w-xl lg:max-w-4l">
             <a className="block text-blue-600" href="#">
@@ -161,7 +159,8 @@ export default function Login() {
             >
               <div className="col-span-6">
                 <label htmlFor="Email" className="block text-lg text-white">
-                  Registered email address
+                  Registered email addre
+                
                 </label>
 
                 <input

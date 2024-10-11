@@ -155,28 +155,34 @@ export default function Dashboard() {
                   </p>
                   <div className="mt-2 flex justify-between w-full ">
                     <div className="">
-                      <p className=" font-bold">
-                        No. of student’s enrolled:
+                      <p className="">
+                        Average score:
                         <a
                           href="#"
-                          className="font-medium underline hover:text-gray-700"
+                          className="font-small underline hover:text-gray-700"
                         >
                           {" "}
                           {studentsList.__v}{" "}
                         </a>
+                        | Status :
+                        <a
+                          href="#"
+                          className="font-small underline hover:text-gray-700"
+                        >
+                          {"     "}
+                          {studentsList.status}{"        "}
+                        </a>
                       </p>
+                     
                     </div>
 
                     <div className="">
                       <strong className="font-bold gap-1  text-green">
-                        <span className="text-[10px]  font-2xl sm:text-xs">
-                          {studentsList.status}
-                        </span>
-
+                     
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           viewBox="0 0 24 24"
-                          fill="green"
+                          fill="black"
                           className="size-6 inline"
                         >
                           <path

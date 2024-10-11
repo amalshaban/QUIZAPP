@@ -40,10 +40,8 @@ export default function Register() {
       navigate("/instructor");
       console.log(response);
     } catch (error) {
-      toast.error(
-        error?.response?.data.message || "unsuccessful. Please try again"
-      );
       console.log(error);
+    toast.error("delete failed");
     }
   };
 

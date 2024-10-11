@@ -10,11 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-<<<<<<< HEAD
     "@heroicons/react": "^2.1.5",
-=======
-    "@fortawesome/fontawesome-free": "^6.6.0",
->>>>>>> 3e4dbc4bc6f65db8ff6016a1c513c14b78406644
     "axios": "^1.7.7",
     "jwt-decode": "^4.0.0",
     "react": "^18.3.1",

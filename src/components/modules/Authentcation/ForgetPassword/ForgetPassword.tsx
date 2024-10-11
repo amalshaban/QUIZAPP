@@ -27,14 +27,11 @@ export default function ForgetPassword() {
       );
       navigate('/ResetPassword')
     } catch (error) {
-      toast.error(
-        error?.response.data.message || "error occured !"
-      );
       console.log(error);
+      toast.error("delete failed");
     }
   };
 
-<<<<<<< HEAD
   
 
   return (
@@ -161,60 +158,5 @@ export default function ForgetPassword() {
         </main>
       </div>
     </section>
-=======
-  return (
-    <>
-      <h1 className="py-5 font-bold text-3xl text-auttextcolor">
-        Forgot password
-      </h1>
-      <div className="p-10 w-full flex justify-start gap-8">
-        <div
-          className="bg-authchoosuserbackgroundcolor w-48 text-center py-5 rounded-xl transition-all hover:outline cursor-pointer  outline-auttextcolor "
-          onClick={navigateLogin}
-        >
-          {/* <Link to="/login" className="text-6xl"> */}
-          <i className="fa-solid fa-user-tie text-6xl"></i>
-          {/* </Link> */}
-          <h6 className="font-semibold pt-2">sign in</h6>
-        </div>
-      </div>
-      <form onSubmit={handleSubmit(onsubmit)}>
-        <div className="py-10">
-          <label htmlFor="email" className="block">
-            Email address
-          </label>
-          <div className="rounded-3xl p-3 border-2 w-full flex border-gray-600 items-center">
-            <i className="fa-solid fa-envelope bg-authbackground text-xl mr-3"></i>
-            <input
-              type="email"
-              placeholder="Type your email"
-              className="w-full bg-authbackground outline-none"
-              {...register("email", {
-                required: "email is require",
-                pattern: {
-                  value: VALIDATIONS.emailRegex,
-                  message: "Invalid email",
-                },
-              })}
-            />
-          </div>
-          {errors ? (
-            <span className="text-red-600">{errors.email?.message}</span>
-          ) : (
-            ""
-          )}
-        </div>
-        <div>
-          <button
-            className="hover:bg-lime-500 transition-all py-3 px-10 rounded-2xl bg-white text-black font-semibold"
-            type="submit"
-          >
-            Send Email
-            <i className="fa-regular fa-circle-check px-3 "></i>
-          </button>
-        </div>
-      </form>
-    </>
->>>>>>> 3e4dbc4bc6f65db8ff6016a1c513c14b78406644
   );
 }

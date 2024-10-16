@@ -1,6 +1,6 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
-import authimg from "../../../assets/Login Image.png";
+
 
 export default function Authlayout() {
   return (
@@ -10,9 +10,7 @@ export default function Authlayout() {
           <div className="w-full">
             <Outlet />
           </div>
-          <div className="bg-backgroudcolor rounded-xl text-align:center flex items-center justify-center w-full">
-            <img src={authimg} />
-          </div>
+       
         </div>
       </div>
     </>

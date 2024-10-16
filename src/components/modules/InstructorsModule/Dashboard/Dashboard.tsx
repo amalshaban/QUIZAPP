@@ -27,7 +27,7 @@ export default function Dashboard() {
   const getFirstFiveIncoming = async () => {
     try {
       const response = await axios<upcomingQuizes>(
-        "https://upskilling-egypt.com:3005/api/quiz",
+        "https://upskilling-egypt.com:3005/api/quiz/incomming",
         {
           headers: { Authorization: `Bearer ${localStorage.token}` },
         }
@@ -47,7 +47,7 @@ export default function Dashboard() {
   const getTop5students = async () => {
     try {
       const response = await axios<topStudents>(
-        "https://upskilling-egypt.com:3005/api/student",
+        "https://upskilling-egypt.com:3005/api/student/top-five",
         {
           headers: { Authorization: `Bearer ${localStorage.token}` },
         }

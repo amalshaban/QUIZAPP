@@ -159,7 +159,7 @@ export default function Login() {
             >
               <div className="col-span-6">
                 <label htmlFor="Email" className="block text-lg text-white">
-                  Registered email addre
+                  Registered email address
                 
                 </label>
 
@@ -276,7 +276,8 @@ export default function Login() {
               )}
 
               <div className="col-span-6 sm:flex sm:items-center sm:gap-6">
-                <button className="inline-block shrink-0 rounded-md border  bg-white px-12 py-3 text-sm font-medium text-black focus:outline-none focus:ring">
+                <button className="inline-block shrink-0 rounded-md border 
+                 bg-white px-12 py-3 text-sm font-medium text-black focus:outline-none focus:ring">
                   Sign In
                   <span className=" w-15 place-content-center">
                     <svg
